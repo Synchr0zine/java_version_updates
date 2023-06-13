@@ -35,6 +35,8 @@ public class Main {
 
         calculate(2, 6, Math.MULTIPLY);
 
+        System.out.println(Currency.NICKEL.name());
+
     }
 
     private static void calculate(double number1, double number2, Math math) {

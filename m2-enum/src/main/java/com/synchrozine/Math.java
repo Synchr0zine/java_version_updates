@@ -1,5 +1,9 @@
 package com.synchrozine;
 
 public enum Math {
-    ADD,SUBTRACT,MULTIPLY,DIVIDE
+    ADD,SUBTRACT,MULTIPLY,DIVIDE;
+
+
+
+
 }
