@@ -35,7 +35,9 @@ public class Main {
 
         calculate(2, 6, Math.MULTIPLY);
 
-        System.out.println(Currency.NICKEL.name());
+        System.out.println(Currency.NICKEL.name() + " " + Currency.NICKEL.getValue());
+        System.out.println(Currency.PENNY.name() + " " + Currency.PENNY.getValue());
+        System.out.println(Currency.QUARTER.ordinal());
 
     }
 
