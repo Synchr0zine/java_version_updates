@@ -3,7 +3,7 @@ package com.synchrozine;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Team<T> {
+public class Team<T extends Player> {
 
     private String name;
 
