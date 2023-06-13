@@ -33,5 +33,24 @@ public class Main {
                 break;
         }
 
+        calculate(2, 6, Math.MULTIPLY);
+
+    }
+
+    private static void calculate(double number1, double number2, Math math) {
+        switch (math) {
+            case ADD:
+                System.out.println(number1 + number2);
+            case SUBTRACT:
+                System.out.println(number1 - number2);
+                break;
+            case MULTIPLY:
+                System.out.println(number1 * number2);
+                break;
+            case DIVIDE:
+                System.out.println(number1 / number2);
+                break;
+        }
+
     }
 }
