@@ -1,5 +1,6 @@
 package com.synchrozine;
 
+import java.util.function.BiFunction;
 import java.util.function.Predicate;
 
 public class Main {
@@ -18,6 +19,11 @@ public class Main {
         Calculator obj = new Calculator();
         Calculate sum3 = obj::findMultiply;
         sum3.calculate(10, 5);
+
+        Calculate sum4 = new Calculator()::findMultiply;
+
+        BiFunction<String,Integer,String> function = (str,i) -> str.substring(i);
+        BiFunction<String,Integer,String> function1 = String::substring;
 
 
     }
