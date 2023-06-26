@@ -18,6 +18,8 @@ public class CarTest {
         Function<String, Car> f2 = Car::new;
 
         //Two Arg Constructor
-        BiFunction<String,String,Car> f3 = Car::new;
+        BiFunction<String, String, Car> f3 = Car::new;
+        Car honda = f3.apply("Nissan", "Rogue");
+        System.out.println(honda.getMake() + " " + honda.getModel());
     }
 }
