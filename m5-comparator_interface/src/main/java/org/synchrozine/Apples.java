@@ -27,5 +27,9 @@ public class Apples {
         //Desc
         apples.sort(comparing(Apple::getWeight).reversed());
         System.out.println(apples);
+
+        //Chaining
+        apples.sort(comparing(Apple::getWeight).reversed().thenComparing(Apple::getColor));
+        System.out.println(apples);
     }
 }
