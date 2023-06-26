@@ -1,6 +1,7 @@
 package com.synchrozine;
 
 import java.util.function.BiFunction;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class Main {
@@ -25,6 +26,8 @@ public class Main {
         BiFunction<String,Integer,String> function = (str,i) -> str.substring(i);
         BiFunction<String,Integer,String> function1 = String::substring;
 
+        Function<Integer,Double> function3 = new MyClass()::method;
+        BiFunction<MyClass,Integer,Double> b1 = MyClass::method;
 
     }
 }
