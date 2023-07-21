@@ -13,12 +13,21 @@ public class StreamOperations {
         System.out.println("Filter");
         list1.stream().filter(i -> i % 2 == 0).forEach(System.out::println);
 
-
         //Distinct
         System.out.println("Distinct");
         list1.stream().filter(i -> i % 2 == 0).distinct().forEach(System.out::println);
 
+        //Limit
+        System.out.println("Limit");
+        list1.stream().filter(i -> i % 2 == 0).limit(2).forEach(System.out::println);
 
+        //Skip
+        System.out.println("Skip");
+        list1.stream().filter(i -> i % 2 == 0).skip(2).forEach(System.out::println);
+
+        //Map(applies a function,do an action)
+        System.out.println("Map");
+        list1.stream().filter(i -> i % 2 == 0).distinct().map(m -> m * 3).forEach(System.out::println);
 
 
     }
